@@ -4,6 +4,9 @@ class FormDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('MaterialComponents'),
+      ),
       body:
 //          Theme(data: ThemeData(primaryColor: Colors.blue), child: ThemeDemo()),
           Theme(
@@ -39,7 +42,9 @@ class _RegeditFormDemoState extends State<RegeditFormDemo> {
       debugPrint('userName ${userName}');
       debugPrint('password ${password}');
 
-      Scaffold.of(context).showSnackBar(SnackBar(content: Text('Register……'),));
+      Scaffold.of(context).showSnackBar(SnackBar(
+        content: Text('Register……'),
+      ));
     } else {
       setState(() {
         _autovalidate = true;
