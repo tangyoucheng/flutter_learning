@@ -3,6 +3,8 @@ import 'button_floating_action_demo.dart';
 import 'button_demo.dart';
 import 'popup_menu_button_demo.dart';
 import 'form_demo.dart';
+import 'checkbox_demo.dart';
+import 'radio_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -14,21 +16,12 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: new ListView(
         children: <Widget>[
-          ListItem(
-            title: 'Form',
-            page: FormDemo(),
-          ),  ListItem(
-            title: 'PopupMenuButtonDemo',
-            page: PopupMenuButtonDemo(),
-          ),
-          ListItem(
-            title: 'Button',
-            page: ButtonDemo(),
-          ),
-          ListItem(
-            title: 'FloatingActionButtonDemo',
-            page: FloatingActionButtonDemo(),
-          ),
+          ListItem(title: 'RadioDemo', page: RadioDemo()),
+          ListItem(title: 'CheckboxDemo', page: CheckboxDemo()),
+          ListItem(title: 'Form', page: FormDemo()),
+          ListItem(title: 'PopupMenuButtonDemo', page: PopupMenuButtonDemo()),
+          ListItem(title: 'Button', page: ButtonDemo()),
+          ListItem(title: 'FloatingActionButtonDemo', page: FloatingActionButtonDemo()),
         ],
       ),
     );
