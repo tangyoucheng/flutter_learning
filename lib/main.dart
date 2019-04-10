@@ -11,7 +11,7 @@ import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigate_demo.dart';
 import 'util/route_name_util.dart';
-import 'demo/form_demo.dart';
+import 'demo/input/form_demo.dart';
 import 'demo/material_components.dart';
 
 void main() {
