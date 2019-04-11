@@ -4,7 +4,9 @@ class Post {
   final String description;
   final String imageUrl;
 
-  const Post({
+  bool selected = false;
+
+   Post({
     this.title,
     this.author,
     this.description,

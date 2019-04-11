@@ -13,6 +13,9 @@ import 'dialog/alert_dialog_demo.dart';
 import 'dialog/bottom_sheet_demo.dart';
 import 'dialog/snack_bar_demo.dart';
 import 'dialog/expansion_panel_demo.dart';
+import 'mdc/chip_demo.dart';
+import 'mdc/data_table_demo.dart';
+import 'mdc/paginated_data_table_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -24,6 +27,9 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: new ListView(
         children: <Widget>[
+          ListItem(title: 'PaginatedDataTableDemo', page: PaginatedDataTableDemo()),
+          ListItem(title: 'DataTableDemo', page: DataTableDemo()),
+          ListItem(title: 'ChipDemo', page: ChipDemo()),
           ListItem(title: 'ExpansionPanelDemo', page: ExpansionPanelDemo()),
           ListItem(title: 'SnackBarDemo', page: SnackBarDemo()),
           ListItem(title: 'BottomSheetDemo', page: BottomSheetDemo()),
