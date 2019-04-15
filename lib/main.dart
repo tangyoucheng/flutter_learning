@@ -13,6 +13,8 @@ import 'demo/navigate_demo.dart';
 import 'util/route_name_util.dart';
 import 'demo/input/form_demo.dart';
 import 'demo/material_components.dart';
+import 'state_management/state_mamagement_demo.dart';
+import 'state_management/scoped_model_demo.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,12 +28,14 @@ class MyApp extends StatelessWidget {
 //      home: HomeTab(),
 //      home: SliverDemo(),
 //      home: NavigateDemo(),
-      initialRoute: RouteNameUtil.MATERIAL_DESIGN_COMPONENTS,
+      initialRoute: RouteNameUtil.STATE_MANAGEMENT_SCOPED_MODEL,
       routes: {
         RouteNameUtil.INDEX: (context) => NavigateDemo(),
         RouteNameUtil.ABOUT: (context) => Page(title: 'about'),
         RouteNameUtil.FROM: (context) => FormDemo(),
         RouteNameUtil.MATERIAL_DESIGN_COMPONENTS: (context) => MaterialComponents(),
+        RouteNameUtil.STATE_MANAGEMENT: (context) => StateManagementDemo(),
+        RouteNameUtil.STATE_MANAGEMENT_SCOPED_MODEL: (context) => ScopedModelDemo(),
       },
       theme: ThemeData(
           primarySwatch: Colors.yellow,
