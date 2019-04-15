@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ninghao/stream/stream_demo.dart';
 import 'demo/drawer_demo.dart';
 import 'demo/drawer_user_demo.dart';
 import 'demo/drawer_container_demo.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
 //      home: HomeTab(),
 //      home: SliverDemo(),
 //      home: NavigateDemo(),
-      initialRoute: RouteNameUtil.STATE_MANAGEMENT_SCOPED_MODEL,
+      initialRoute: RouteNameUtil.STRAEAM_DEMO,
       routes: {
         RouteNameUtil.INDEX: (context) => NavigateDemo(),
         RouteNameUtil.ABOUT: (context) => Page(title: 'about'),
@@ -36,12 +37,13 @@ class MyApp extends StatelessWidget {
         RouteNameUtil.MATERIAL_DESIGN_COMPONENTS: (context) => MaterialComponents(),
         RouteNameUtil.STATE_MANAGEMENT: (context) => StateManagementDemo(),
         RouteNameUtil.STATE_MANAGEMENT_SCOPED_MODEL: (context) => ScopedModelDemo(),
+        RouteNameUtil.STRAEAM_DEMO: (context) => StreamDemo(),
       },
       theme: ThemeData(
-          primarySwatch: Colors.yellow,
-          accentColor: Color.fromRGBO(3, 54, 255, 1.0),
-          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-          splashColor: Colors.white70),
+        primarySwatch: Colors.yellow,
+        accentColor: Color.fromRGBO(3, 54, 255, 1.0),
+        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+        splashColor: Colors.white70),
     );
   }
 }
