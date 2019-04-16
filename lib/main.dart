@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ninghao/demo/bloc/bloc_demo.dart';
+import 'package:flutter_ninghao/demo/rx_dart/rx_dart_demo.dart';
 import 'package:flutter_ninghao/demo/state_management/scoped_model_demo.dart';
 import 'package:flutter_ninghao/demo/state_management/state_mamagement_demo.dart';
 import 'package:flutter_ninghao/demo/stream/stream_demo.dart';
@@ -20,7 +22,7 @@ import 'package:flutter/rendering.dart';
 
 void main() {
   //视觉调式开关
-  debugPaintSizeEnabled = true;
+//  debugPaintSizeEnabled = true;
   runApp(MyApp());
 }
 
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
 //      home: HomeTab(),
 //      home: SliverDemo(),
 //      home: NavigateDemo(),
-      initialRoute: RouteNameUtil.STRAEAM_DEMO,
+      initialRoute: RouteNameUtil.BLOC_DEMO,
       routes: {
         RouteNameUtil.INDEX: (context) => NavigateDemo(),
         RouteNameUtil.ABOUT: (context) => Page(title: 'about'),
@@ -41,6 +43,8 @@ class MyApp extends StatelessWidget {
         RouteNameUtil.STATE_MANAGEMENT: (context) => StateManagementDemo(),
         RouteNameUtil.STATE_MANAGEMENT_SCOPED_MODEL: (context) => ScopedModelDemo(),
         RouteNameUtil.STRAEAM_DEMO: (context) => StreamDemo(),
+        RouteNameUtil.RX_DART_DEMO: (context) => RxDartDemo(),
+        RouteNameUtil.BLOC_DEMO: (context) => BlocDemo(),
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,

@@ -10,7 +10,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -21,6 +21,8 @@ dependencies:
   scoped_model: ^1.0.1
   #用于读写简单键值对的Flutter插件。包装iOS上的NSUserDefaults和Android上的SharedPreferences。
   shared_preferences: 0.5.2
+  #ReactiveX的dart 实现，它极大的扩展了Stream的功能,能够让我们在使用bloc的时候更加游刃有余。
+  rxdart: 0.21.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

@@ -9,4 +9,6 @@ class RouteNameUtil {
   static const STATE_MANAGEMENT = '/stateManagement';
   static const STATE_MANAGEMENT_SCOPED_MODEL = '/stateManagement_scopedModel';
   static const STRAEAM_DEMO = '/streamDemo';
+  static const RX_DART_DEMO = '/rxDartDemo';
+  static const BLOC_DEMO = '/blocDemo';
 }
