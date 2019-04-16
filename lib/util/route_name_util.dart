@@ -11,4 +11,5 @@ class RouteNameUtil {
   static const STRAEAM_DEMO = '/streamDemo';
   static const RX_DART_DEMO = '/rxDartDemo';
   static const BLOC_DEMO = '/blocDemo';
+  static const HTTP_DEMO = '/httpDemo';
 }

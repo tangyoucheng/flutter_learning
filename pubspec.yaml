@@ -23,6 +23,8 @@ dependencies:
   shared_preferences: 0.5.2
   #ReactiveX的dart 实现，它极大的扩展了Stream的功能,能够让我们在使用bloc的时候更加游刃有余。
   rxdart: 0.21.0
+  #网络请求 上箭头表示可以接受小版本的更新
+  http: ^0.12.0+2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
