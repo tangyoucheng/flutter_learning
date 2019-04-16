@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ninghao/stream/stream_demo.dart';
+import 'package:flutter_ninghao/demo/state_management/scoped_model_demo.dart';
+import 'package:flutter_ninghao/demo/state_management/state_mamagement_demo.dart';
+import 'package:flutter_ninghao/demo/stream/stream_demo.dart';
 import 'demo/drawer_demo.dart';
 import 'demo/drawer_user_demo.dart';
 import 'demo/drawer_container_demo.dart';
@@ -14,8 +16,6 @@ import 'demo/navigate_demo.dart';
 import 'util/route_name_util.dart';
 import 'demo/input/form_demo.dart';
 import 'demo/material_components.dart';
-import 'state_management/state_mamagement_demo.dart';
-import 'state_management/scoped_model_demo.dart';
 
 void main() {
   runApp(MyApp());
