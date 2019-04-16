@@ -75,11 +75,11 @@ class _HttpDemoHomeState extends State<HttpDemoHome> {
 }
 
 class Post {
-  final int id;
-  final String title;
-  final String description;
-  final String author;
-  final String imageUrl;
+  int id;
+  String title;
+  String description;
+  String author;
+  String imageUrl;
   Post(
     this.id,
     this.title,
@@ -88,18 +88,33 @@ class Post {
     this.imageUrl,
   );
 
-   Post.fromJson(Map json)
-      : id = json['id'],
-        title = json['title'],
-        description = json['description'],
-        author = json['author'],
-        imageUrl = json['imageUrl'];
+//   Post.fromJson(Map json)
+//      : id = json['id'],
+//        title = json['title'],
+//        description = json['description'],
+//        author = json['author'],
+//        imageUrl = json['imageUrl'];
+  Post.fromJson(Map json) {
+    id = json['id'];
+    title = json['title'];
+    description = json['description'];
+    author = json['author'];
+    imageUrl = json['imageUrl'];
+  }
 
-  Map toJson() => {
-        'id': id,
-        'title': title,
-        'description': description,
-        'author': author,
-        'imageUrl': imageUrl,
-      };
+//  Map toJson() => {
+//        'id': id,
+//        'title': title,
+//        'description': description,
+//        'author': author,
+//        'imageUrl': imageUrl,
+//      };
+  Map toJson() {
+    final Map returnData = Map();
+    returnData['id'] = id;
+    returnData['title'] = title;
+    returnData['description'] = description;
+    returnData['author'] = author;
+    returnData['imageUrl'] = imageUrl;
+  }
 }
