@@ -12,4 +12,5 @@ class RouteNameUtil {
   static const RX_DART_DEMO = '/rxDartDemo';
   static const BLOC_DEMO = '/blocDemo';
   static const HTTP_DEMO = '/httpDemo';
+  static const ANIMATION_DEMO = '/animationDemo';
 }

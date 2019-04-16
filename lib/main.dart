@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ninghao/demo/animation/animationg_demo.dart';
 import 'package:flutter_ninghao/demo/bloc/bloc_demo.dart';
 import 'package:flutter_ninghao/demo/http/http_demo.dart';
 import 'package:flutter_ninghao/demo/rx_dart/rx_dart_demo.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
 //      home: HomeTab(),
 //      home: SliverDemo(),
 //      home: NavigateDemo(),
-      initialRoute: RouteNameUtil.HTTP_DEMO,
+      initialRoute: RouteNameUtil.ANIMATION_DEMO,
       routes: {
         RouteNameUtil.INDEX: (context) => NavigateDemo(),
         RouteNameUtil.ABOUT: (context) => Page(title: 'about'),
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         RouteNameUtil.RX_DART_DEMO: (context) => RxDartDemo(),
         RouteNameUtil.BLOC_DEMO: (context) => BlocDemo(),
         RouteNameUtil.HTTP_DEMO: (context) => HttpDemo(),
+        RouteNameUtil.ANIMATION_DEMO: (context) => AnimationDemo(),
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
