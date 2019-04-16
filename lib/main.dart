@@ -16,8 +16,11 @@ import 'demo/navigate_demo.dart';
 import 'util/route_name_util.dart';
 import 'demo/input/form_demo.dart';
 import 'demo/material_components.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
+  //视觉调式开关
+  debugPaintSizeEnabled = true;
   runApp(MyApp());
 }
 
