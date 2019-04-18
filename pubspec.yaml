@@ -32,8 +32,8 @@ dependencies:
   #flutter_webview_plugin: ^0.3.0+2
 
   #本地插件引用 注意缩进格式
-  json_to_dart:
-    path: plugins/json_to_dart
+#  json_to_dart:
+#    path: plugins/json_to_dart
 
 dev_dependencies:
   flutter_test:
