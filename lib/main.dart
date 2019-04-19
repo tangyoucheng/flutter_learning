@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ninghao/demo/animation/animation_demo.dart';
 import 'package:flutter_ninghao/demo/bloc/bloc_demo.dart';
 import 'package:flutter_ninghao/demo/http/http_demo.dart';
+import 'package:flutter_ninghao/demo/i18n/i18n_demo.dart';
 import 'package:flutter_ninghao/demo/rx_dart/rx_dart_demo.dart';
 import 'package:flutter_ninghao/demo/state_management/scoped_model_demo.dart';
 import 'package:flutter_ninghao/demo/state_management/state_mamagement_demo.dart';
@@ -21,6 +22,9 @@ import 'util/route_name_util.dart';
 import 'demo/input/form_demo.dart';
 import 'demo/material_components.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'demo/i18n/map/localizations_map_demo.dart';
+import 'generated/i18n.dart';
 
 void main() {
   //视觉调式开关
@@ -33,10 +37,31 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      locale: Locale('zh', 'CN'),
+//      localeResolutionCallback: (Locale locale, Iterable<Locale> supportedLocales) {
+//        return Locale('zh', 'CN');
+//      },
+      //国际化
+      localizationsDelegates: [
+        //自定义本地化语言
+        S.delegate,
+        LocalizationsDemoDelegate(),
+        //Material国际化
+        GlobalMaterialLocalizations.delegate,
+        //文字方向
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      //应用支持的语言
+//      supportedLocales: [
+//        //语言代码，地区代码
+//        Locale('en', 'US'),
+//        Locale('zh', 'CN'),
+//      ],
+      supportedLocales: S.delegate.supportedLocales,
 //      home: HomeTab(),
 //      home: SliverDemo(),
 //      home: NavigateDemo(),
-      initialRoute: RouteNameUtil.ANIMATION_DEMO,
+      initialRoute: RouteNameUtil.I18N_DEMO,
       routes: {
         RouteNameUtil.INDEX: (context) => NavigateDemo(),
         RouteNameUtil.ABOUT: (context) => Page(title: 'about'),
@@ -49,12 +74,13 @@ class MyApp extends StatelessWidget {
         RouteNameUtil.BLOC_DEMO: (context) => BlocDemo(),
         RouteNameUtil.HTTP_DEMO: (context) => HttpDemo(),
         RouteNameUtil.ANIMATION_DEMO: (context) => AnimationDemo(),
+        RouteNameUtil.I18N_DEMO: (context) => I18nDemo(),
       },
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
-        accentColor: Color.fromRGBO(3, 54, 255, 1.0),
-        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-        splashColor: Colors.white70),
+          primarySwatch: Colors.yellow,
+          accentColor: Color.fromRGBO(3, 54, 255, 1.0),
+          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+          splashColor: Colors.white70),
     );
   }
 }

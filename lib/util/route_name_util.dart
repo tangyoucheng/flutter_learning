@@ -13,4 +13,5 @@ class RouteNameUtil {
   static const BLOC_DEMO = '/blocDemo';
   static const HTTP_DEMO = '/httpDemo';
   static const ANIMATION_DEMO = '/animationDemo';
+  static const I18N_DEMO = '/i18nDemo';
 }
