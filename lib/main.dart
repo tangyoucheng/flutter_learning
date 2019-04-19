@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ninghao/demo/animation/animationg_demo.dart';
+import 'package:flutter_ninghao/demo/animation/animation_demo.dart';
 import 'package:flutter_ninghao/demo/bloc/bloc_demo.dart';
 import 'package:flutter_ninghao/demo/http/http_demo.dart';
 import 'package:flutter_ninghao/demo/rx_dart/rx_dart_demo.dart';
