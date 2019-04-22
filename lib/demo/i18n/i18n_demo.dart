@@ -26,7 +26,7 @@ class I18nDemo extends StatelessWidget {
               style: Theme.of(context).textTheme.title,
             ),
             Text(
-              S.of(context).greet,
+              S.of(context).greet('宁浩'),
             )
           ],
         ),

@@ -19,8 +19,8 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  String get greet => "hello{name}";
   String get title => "hello";
+  String greet(String name) => "hello${name}";
 }
 
 class $en extends S {
@@ -34,9 +34,9 @@ class $zh_CN extends S {
   TextDirection get textDirection => TextDirection.ltr;
 
   @override
-  String get greet => "您好{name}";
-  @override
   String get title => "您好";
+  @override
+  String greet(String name) => "您好${name}";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
