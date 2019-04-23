@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
-String url = 'https://www.baidu.com';
+String url = 'https://github.com/alibaba/flutter-go';
+//String url = 'https://map.baidu.com/@11588371,3565563,15z';
+//String url = 'https://www.baidu.com';
 
 void main() => runApp(MyApp());
 
