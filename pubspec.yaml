@@ -18,7 +18,7 @@ dependencies:
   #国际化插件
   flutter_localizations:
     sdk: flutter
-  intl: 0.15.7
+  intl: 0.15.8
   #状态管理插件
   scoped_model: ^1.0.1
   #用于读写简单键值对的Flutter插件。包装iOS上的NSUserDefaults和Android上的SharedPreferences。
@@ -41,7 +41,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  test: 1.5.3
+  #test: 1.5.3
   intl_translation: 0.17.3
 
 

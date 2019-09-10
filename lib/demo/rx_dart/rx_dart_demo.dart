@@ -74,7 +74,7 @@ class _RxDartDemoHomeState extends State<RxDartDemoHome> {
         //RxDart的where方法
         .where((item) => item.length > 9)
         //RxDart的debounce方法
-        .debounce(Duration(milliseconds: 500))
+        //.debounce(Duration(milliseconds: 500))
         //RxDart的数据监听方法
         .listen((data) {
       print('${data}');
